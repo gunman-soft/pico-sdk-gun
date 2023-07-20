@@ -52,7 +52,7 @@ endfunction()
 
 # add a link option to wrap the given function name; i.e. -Wl:wrap=FUNCNAME for gcc
 function(pico_wrap_function TARGET FUNCNAME)
-    target_link_options(${TARGET} INTERFACE "LINKER:--wrap=${FUNCNAME}")
+#    target_link_options(${TARGET} INTERFACE "LINKER:--wrap=${FUNCNAME}")
 endfunction()
 
 # add map file generation for the given target
